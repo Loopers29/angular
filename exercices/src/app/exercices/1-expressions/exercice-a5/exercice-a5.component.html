@@ -1,0 +1,34 @@
+<div class="form-group">
+  <label for="select">Color : </label>
+    <select [(ngModel)]="selectedOption">
+      <option value="rouge">rouge</option>
+      <option value="vert">vert</option>
+      <option value="bleu">bleu</option>
+      <option value="rouge et vert">rouge et vert</option>
+      <option value="rouge et bleu">rouge et bleu</option>
+      <option value="bleu et vert">bleu et vert</option>
+      <option value="rouge vert bleu">rouge vert bleu</option>
+    </select>
+    <div>{{selectedOption}}</div>
+</div>
+
+<div id="greencircle" *ngIf="selectedOption == 'vert'"></div>
+<div id="redcircle" *ngIf="selectedOption == 'rouge'"></div>
+<div id="bluecircle" *ngIf="selectedOption == 'bleu'"></div>
+<div *ngIf="selectedOption == 'rouge et vert'"> 
+  <div id="greencircle" ></div>
+  <div id="redcircle" ></div>
+</div>
+<div *ngIf="selectedOption == 'rouge et bleu'"> 
+  <div id="bluecircle" ></div>
+  <div id="redcircle" ></div>
+</div>
+<div *ngIf="selectedOption == 'bleu et vert'"> 
+  <div id="greencircle" ></div>
+  <div id="bluecircle" ></div>
+</div>
+<div *ngIf="selectedOption == 'rouge vert bleu'"> 
+  <div id="greencircle" ></div>
+  <div id="bluecircle" ></div>
+  <div id="redcircle" ></div>
+</div>

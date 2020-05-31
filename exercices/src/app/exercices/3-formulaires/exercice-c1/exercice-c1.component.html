@@ -1,0 +1,7 @@
+<form (ngSubmit)="traiterLeFormulaire()">
+    <label for="fname">Saisie Url image:</label><br>
+    <input type="text" name="saisieUtilisateur" [(ngModel)]="saisieUtilisateur">
+    <button>Submit</button>
+</form>
+<div>{{saisieUtilisateur}}</div>
+<img [src]="adresseDeLImage">

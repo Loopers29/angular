@@ -1,0 +1,9 @@
+<ul>
+    <li *ngFor="let car of Cars">
+
+        <div>{{ car.model}}</div>
+        <div>{{ car.puissance | uppercase}}</div>
+        <div>{{ car.prix }}</div>
+        <div>{{ car.frabrication | date : 'dd-MM-yyyy' }}</div>        
+    </li>
+</ul>

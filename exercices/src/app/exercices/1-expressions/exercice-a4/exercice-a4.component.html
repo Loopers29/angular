@@ -1,0 +1,10 @@
+<h2>bonjour {{prenom}}</h2>
+<input [(ngModel)]="prenom" placeholder={{prenom}}>
+<ul>
+    <li *ngFor="let studen of classe.listinscrit">
+      <div><span>{{studen.prenom}}</span></div>
+      <div><span>{{studen.nom}}</span></div>
+      <div><span>{{studen.age}}</span></div>
+    </li>
+</ul>
+{{classe.listinscrit.length}}

@@ -1,0 +1,26 @@
+
+.pair{
+    color:green;
+}
+
+.impair{
+    color:pink;
+}
+
+.supp{
+    border-width:1px;
+    border-style:dotted;
+    border-color: orange;
+}
+
+.inf{
+    border-width:1px;
+    border-style:dotted;
+    border-color: blue;
+}
+
+.egal{
+    border-width:1px;
+    border-style:dotted;
+    border-color: grey;
+}

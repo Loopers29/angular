@@ -1,0 +1,19 @@
+#greencircle {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background: green;
+}
+#redcircle {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background: red;
+}
+
+#bluecircle {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background: blue;
+}
